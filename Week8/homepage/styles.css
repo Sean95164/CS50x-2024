@@ -1,0 +1,29 @@
+.subtitle {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.edu-subtitle {
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 2px;
+}
+
+.interest {
+    text-shadow: 2px 2px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.intro-subtitle {
+    text-shadow: 2px 2px;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.bottons {
+    margin-left: 30px;
+}

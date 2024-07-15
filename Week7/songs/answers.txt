@@ -1,0 +1,2 @@
+1. Besides the average of energy, valence and danceability of songs, I will use more indicators like tempo and speechiness.
+2. Maybe each of indicators infects the aura differently, so I can also calculate corresponding weight.

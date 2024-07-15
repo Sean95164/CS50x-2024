@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <div class="section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Shares</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for bought in boughts %}
+                    <tr>
+                        <th>{{ bought["symbol"] }}</th>
+                        <th>{{ bought["SUM(shares)"] }}</th>
+                        <th>{{ bought["price"] | usd }}</th>
+                        <th>{{ bought["SUM(amount)"] | usd }}</th>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+
+                <tfoot>
+                    <td class="border-0 fw-bold text-end" colspan="3">Remaining Cash</td>
+                    <td class="border-0 text-end">{{ cash | usd }}</td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+{% endblock %}

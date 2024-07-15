@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: When we times sorted50000.txt, we find sort1 executing faster than sort3, which fits the result of bubble sort having n running time complexity in worst case.
+
+sort2 uses: merge sort
+
+How do you know?: When using sort2 to execute random50000.txt, it's the fastest one.
+
+sort3 uses: selection sort
+
+How do you know?: We know selection sort having n square running time complexity in worse case, and we find when executing sorted50000.txt, it behaved slower than sort1.
